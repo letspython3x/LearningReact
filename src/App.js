@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/Header'
 import MainContent from './components/MainContent'
 import Footer from './components/Footer'
+import TodoItem from './components/TodoItem'
 
 function App() {
   const date = new Date()
@@ -26,6 +27,11 @@ function App() {
       <Header />
       <h1>Good {timeOfDay}</h1>
       <MainContent />
+      <div class="todo-list">
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+      </div>
       <Footer />
     </div>)
 }
