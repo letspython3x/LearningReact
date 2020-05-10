@@ -2,27 +2,25 @@ body {
     margin : 0;
 }
 
-.navbar {
-height: 100px;
-background-color: #333;
-color: whitesmoke;
-margin-bottom: 15px;
-text-align: center;
-font-size: 30px;
-display: flex;
-justify-content: center;
-align-items: center;
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.main-content{
-    font-family: 'Comic Sans MS','Times New Roman';
-    font-size: 20px;
-    margin-left: 17em;
-    padding: 0 1em;
+.contact-card {
+    flex-basis: 250px;
+    margin: 20px;
 }
 
-.footer{
-    font-family: 'Comic Sans MS','Times New Roman';
-    font-size: 10px;
+.contact-card > img {
+    width: 100%;
+    height: auto;
+}
 
+.contact-card > h3 {
+    text-align: center;
+}
+
+.contact-card > p {
+    font-size: 12px;
 }
