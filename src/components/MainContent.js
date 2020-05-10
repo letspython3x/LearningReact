@@ -1,6 +1,7 @@
 import React from "react"
 
 function MainContent() {
-    return (<p>My content is here...</p>)
+    return (
+        <main>My content is here...</main>)
 }
 export default MainContent

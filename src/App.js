@@ -28,11 +28,12 @@ import Footer from './components/Footer'
 // }
 
 function App() {
-  return (<div>
-    <Header />
-    <MainContent />
-    <Footer />
-  </div>)
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>)
 }
 
 export default App;
