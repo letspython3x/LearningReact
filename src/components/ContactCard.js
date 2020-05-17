@@ -1,5 +1,7 @@
 import React from "react"
 
+// props is a strong convention to be used as function parameter, 
+// although we ar allowed to use any name.
 function ContactCard(props) {
     return (
         <div className="contact-card">
