@@ -1,55 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-import Header from './components/Header'
-import MainContent from './components/MainContent'
-import Footer from './components/Footer'
-
-function App() {
-  const date = new Date()
-  const hours = date.getHours()
-  let timeOfDay
-
-  if (hours < 12) {
-    timeOfDay = "morning"
+class App extends React.Component {
+  render() {
+    return (<h1>Code goes here.</h1>)
   }
-  else if (hours > 12 && hours < 17) {
-    timeOfDay = "evening"
-  }
-  else {
-    timeOfDay = "night"
-  }
-
-  return (
-    <div>
-      <Header />
-      <h1>Good {timeOfDay}</h1>
-      <MainContent />
-      <Footer />
-    </div>)
 }
 
 export default App;
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
