@@ -8,9 +8,9 @@ function App() {
   // const jokes  = jokesData.map(function(joke){
   //   return <Joke question={joke.question} punchLine={joke.punchLine} />
   // })
- 
-  const jokes = jokesData.map(joke => <Joke key ={joke.id} question={joke.question} punchLine={joke.punchLine}/>)
 
+  const jokes = jokesData.map(joke => <Joke
+    key={joke.id} question={joke.question} punchLine={joke.punchLine} />)
 
   return (
     <div>
