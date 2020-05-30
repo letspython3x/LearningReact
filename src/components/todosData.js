@@ -5,114 +5,114 @@ const todosData = [
         text: "Intro to JSX"
     },
     {
-        id: 1,
+        id: 2,
         completed: true,
         text: "React Functional Components"
     },
     {
-        id: 1,
+        id: 3,
         completed: true,
         text: "Move Components to a separate file"
     },
     {
-        id: 1,
+        id: 4,
         completed: true,
         text: "Parent Child Components"
     },
 
     {
-        id: 1,
+        id: 5,
         completed: true,
         text: "JSX to Javascript and back"
     },
     {
-        id: 1,
+        id: 6,
         completed: true,
         text: "Styling react with CSS Classes"
     },
     {
-        id: 1,
+        id: 7,
         completed: true,
         text: "Styling react with Inline CSS Classes"
     },
     {
-        id: 1,
+        id: 8,
         completed: true,
         text: "React Props & Styling"
     },
 
     {
-        id: 1,
+        id: 9,
         completed: true,
         text: "React Class Based Components"
     },
     {
-        id: 1,
+        id: 10,
         completed: false,
         text: "React State"
     },
     {
-        id: 1,
+        id: 11,
         completed: false,
         text: "Handling Events"
     },
     {
-        id: 1,
+        id: 12,
         completed: false,
         text: "setState: Changing the state"
     },
     {
-        id: 1,
+        id: 13,
         completed: false,
         text: "React Lifecycle methods"
     },
     {
-        id: 1,
+        id: 14,
         completed: false,
         text: "React Conditional Render"
     },
     {
-        id: 1,
+        id: 15,
         completed: false,
         text: "React Fetch Data from API"
     },
     {
-        id: 1,
+        id: 16,
         completed: false,
         text: "React Forms"
     },
     {
-        id: 1,
+        id: 17,
         completed: false,
         text: "React Container & Component Arch"
     },
     {
-        id: 1,
+        id: 18,
         completed: false,
         text: "React Meme Generator"
     },
     {
-        id: 1,
+        id: 19,
         completed: false,
         text: "Writing Modern React Apps"
     },
     {
-        id: 1,
+        id: 20,
         completed: false,
         text: "Hooks Intro"
     },
     {
-        id: 1,
+        id: 21,
         completed: false,
         text: "React useState()"
     },
     {
-        id: 1,
+        id: 22,
         completed: false,
         text: "React useEffect()"
     },
     {
-        id: 1,
+        id: 23,
         completed: false,
         text: "React Project Ideas for Practicing"
     },
