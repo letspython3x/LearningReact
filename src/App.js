@@ -10,12 +10,8 @@ import todosData from './components/todosData'
 
 
 class App extends Component {
-  create_to_do_item(item) {
-    return <TodoItem key={item.id} completed={item.completed} text={item.text} />
-  }
-
   render() {
-    const todo = todosData.map(this.create_to_do_item)
+    const todo = todosData.map(item => <TodoItem key={item.id} completed={item.completed} text={item.text} />)
 
     return (
       <div>
