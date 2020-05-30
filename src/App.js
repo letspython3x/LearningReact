@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    const todo = this.state.todos.map(item => <TodoItem key={item.id} item={item} />)
+    const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} />)
 
     return (
       <div>
@@ -26,7 +26,7 @@ class App extends Component {
         <Greetings />
         <MainContent />
         <div className="todo-list">
-          {todo}
+          {todoItems}
         </div>
         <Footer />
       </div>)
