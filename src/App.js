@@ -1,36 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Header from './components/Header'
 import MainContent from './components/MainContent'
 import Footer from './components/Footer'
 import TodoItem from './components/TodoItem'
+import Greetings from './components/Greetings'
+import todosData from './components/todosData'
+
 
 function App() {
-  const date = new Date()
-  const hours = date.getHours()
-  let timeOfDay
-
-  if (hours < 12) {
-    timeOfDay = "morning"
+  function create_to_do_item(item) {
+    return <TodoItem key={item.id} completed={item.completed} text={item.text} />
   }
-  else if (hours > 12 && hours < 17) {
-    timeOfDay = "evening"
-  }
-  else {
-    timeOfDay = "night"
-  }
+  const todo = todosData.map(create_to_do_item)
 
   return (
     <div>
       <Header />
-      <h1>Good {timeOfDay}</h1>
+      <Greetings />
       <MainContent />
       <div class="todo-list">
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
+        {todo}
       </div>
       <Footer />
     </div>)
