@@ -1,7 +1,5 @@
 import React from "react"
 
-
-
 class TodoItem extends React.Component {
     render() {
         return (
@@ -9,7 +7,7 @@ class TodoItem extends React.Component {
                 <input
                     type="checkbox"
                     checked={this.props.item.completed}
-                    onChange={() => console.log("Changed!!")} />
+                    onChange={() => this.props.handleChange(this.props.item.id)} />
                 <p>{this.props.item.text}</p>
             </div>
         )
