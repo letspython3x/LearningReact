@@ -115,7 +115,7 @@ const todosData = [
         id: 23,
         completed: false,
         text: "React Project Ideas for Practicing"
-    },
+    }
 ]
 
 export default todosData

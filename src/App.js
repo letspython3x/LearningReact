@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import TodoItem from './components/TodoItem'
 import Greetings from './components/Greetings'
 import todosData from './components/todosData'
-
+import Clock from './components/Clock'
 
 class App extends Component {
   constructor() {
@@ -30,8 +30,6 @@ class App extends Component {
       return todo
     })
     this.setState({ todos: updatedTodos })
-    console.log(updatedTodos)
-    console.log(this.state.todos)
   }
 
   // Need to work on below code as it calls inside map twice
@@ -56,6 +54,7 @@ class App extends Component {
       <div>
         <Header />
         <Greetings />
+        <Clock />
         <div className="todo-list">
           {todoItems}
         </div>
