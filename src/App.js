@@ -21,11 +21,17 @@ class App extends Component {
     console.log("Clicked")
     const updatedTodos = this.state.todos.map(todo => {
       if (todo.id === id) {
-        todo.completed = !todo.completed
+        // todo.completed = !todo.completed // BUG : we should not update state directly
+        // return a brand new object, using ... object spread
+        return {
+          ...todo, completed: !todo.completed
+        }
       }
       return todo
     })
     this.setState({ todos: updatedTodos })
+    console.log(updatedTodos)
+    console.log(this.state.todos)
   }
 
   // Need to work on below code as it calls inside map twice
