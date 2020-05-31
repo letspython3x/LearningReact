@@ -2,8 +2,11 @@ import React from "react"
 
 class TodoItem extends React.Component {
     render() {
-        const textDecoration = this.props.item.completed ? "line-through" : "none"
-        const bold = this.props.item.completed ? "none" : "bold"
+        const completedStyle = {
+            fontStyle: "italic",
+            color: "#cdcdcd",
+            textDecoration: "line-through"
+        }
 
         return (
             <div className="todo-item">
@@ -11,7 +14,7 @@ class TodoItem extends React.Component {
                     type="checkbox"
                     checked={this.props.item.completed}
                     onChange={() => this.props.handleChange(this.props.item.id)} />
-                <p style={{ textDecoration: textDecoration, fontWeight: bold }}>{this.props.item.text}</p>
+                <p style={this.props.item.completed ? completedStyle : null}>{this.props.item.text}</p>
             </div>
         )
     }
