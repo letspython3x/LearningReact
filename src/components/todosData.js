@@ -48,27 +48,27 @@ const todosData = [
     },
     {
         id: 10,
-        completed: false,
+        completed: true,
         text: "React State"
     },
     {
         id: 11,
-        completed: false,
+        completed: true,
         text: "Handling Events"
     },
     {
         id: 12,
-        completed: false,
+        completed: true,
         text: "setState: Changing the state"
     },
     {
         id: 13,
-        completed: false,
+        completed: true,
         text: "React Lifecycle methods"
     },
     {
         id: 14,
-        completed: false,
+        completed: true,
         text: "React Conditional Render"
     },
     {
