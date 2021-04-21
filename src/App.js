@@ -10,6 +10,14 @@ import Clock from './components/Clock'
 import StateHookWithObject from './functionalComponents/StateHookWithObject'
 import StateHookWithArray from './functionalComponents/StateHookWithArray'
 import EffectHookCounter1 from './functionalComponents/EffectHookCounter1'
+import MimicComponentDidMount
+    from './functionalComponents/MimicComponentDidMount'
+import {UserProvider} from "./components/contextComponents/userContext";
+import FunContextComponent from "./functionalComponents/FunContextComponent";
+import FunContextHookComponent from "./functionalComponents/FunContextHookComponent";
+
+
+export const ChannelContext = React.createContext()
 
 class App extends Component {
     constructor() {
@@ -35,20 +43,6 @@ class App extends Component {
         this.setState({todos: updatedTodos})
     }
 
-    // Need to work on below code as it calls inside map twice
-    // handleChange2(id) {
-    //   console.log("Clicked")
-    //   this.setState(prevState => {
-    //     const updatedTodos = prevState.todos.map(todo => {
-    //       if (todo.id === id) {
-    //         todo.completed = !todo.completed
-    //       }
-    //       return todo
-    //     })
-    //     return ({ todos: updatedTodos })
-    //   })
-    // }
-
     render() {
         const todoItems = this.state.todos.map(item => <TodoItem key={item.id}
                                                                  item={item}
@@ -56,13 +50,21 @@ class App extends Component {
 
         return (
             <div>
+
                 <Header/>
                 <Greetings/>
+                <UserProvider value="Abhishake">
+                    <ChannelContext.Provider value="letspython3.x">
+                        <FunContextComponent/>
+                        <FunContextHookComponent/>
+                    </ChannelContext.Provider>
+                </UserProvider>
+
                 <Clock/>
-                <EffectHookCounter1 />
+                <EffectHookCounter1/>
                 <StateHookWithArray/>
                 <StateHookWithObject/>
-
+                <MimicComponentDidMount/>
                 <div className="todo-list">
                     {todoItems}
                 </div>
