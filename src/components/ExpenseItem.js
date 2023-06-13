@@ -1,18 +1,16 @@
-import React  from 'react';
-import ExpenseDate from './ExpenseDate' ;
+import React from "react";
+import ExpenseDate from "./ExpenseDate";
+import "./ExpenseItem.css";
+
 
 export default function ExpenseItem(props) {
-    const { title, price, date } = props;
+  const { title, price, date } = props;
 
-    return (
-        <div>
-            <ExpenseDate date={date} />
-            <div className="expense-item__title">
-                {title}
-            </div>
-            <div className="expense-item__price">
-                {price}
-            </div>
-        </div>
-    )
+  return (
+    <div className="expense-item">
+      <ExpenseDate date={date} />
+      <div className="expense-item__description">{title}</div>
+      <div className="expense-item__price">{price}</div>
+    </div>
+  );
 }
